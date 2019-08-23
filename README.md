@@ -8,6 +8,12 @@ The analysis was done in Python using the pandas and nltk libraries. The code is
 
 The data files are in the `data` folder. The data was obtained from the [Facebook Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page) on several dates. 
 
+The API queries were made with Faceook page IDs, which can be obtained from Facebook's [ad library report](https://www.facebook.com/ads/library/report/) for Canada.
+
+Example of an API call made:
+
+`https://graph.facebook.com/v3.3/ads_archive?ad_reached_countries=['CA']&ad_type=POLITICAL_AND_ISSUE_ADS&ad_active_status=ALL&fields=page_name,page_id,funding_entity,ad_creative_body,ad_creative_link_caption,ad_creative_link_description,ad_snapshot_url,currency,spend,ad_creation_time,ad_delivery_start_time,ad_delivery_stop_time,region_distribution,impressions,demographic_distribution&limit=250&search_page_ids=2771074019597750,230258673663722,551408801597287&access_token=<API-TOKEN>`
+
 There are three data files:
 
 ### fb_ads_main.csv 
